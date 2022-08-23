@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.23)
+project(slam_lab_135)
+find_package(OpenCV 4 REQUIRED)
+set(CMAKE_CXX_STANDARD 14)
+INCLUDE_DIRECTORIES("/usr/include/eigen3")
+add_executable(slam_lab_135 main.cpp)
+target_link_libraries(slam_lab_135  PRIVATE ${OpenCV_LIBS})
